@@ -13,6 +13,8 @@
 #import <React/RCTEventDispatcher.h>
 #import <React/RCTUtils.h>
 #import <React/RCTLog.h>
+#import <React/RCTBridgeModule.h>
+#import "RNCAsyncStorage.h"
 
 #import <AVFoundation/AVAudioSession.h>
 #import <CallKit/CallKit.h>
@@ -37,6 +39,7 @@ static NSString *const RNCallKeepProviderReset = @"RNCallKeepProviderReset";
 static NSString *const RNCallKeepCheckReachability = @"RNCallKeepCheckReachability";
 static NSString *const RNCallKeepDidChangeAudioRoute = @"RNCallKeepDidChangeAudioRoute";
 static NSString *const RNCallKeepDidLoadWithEvents = @"RNCallKeepDidLoadWithEvents";
+static NSString *const HostValue = @"TALKER";
 
 @implementation RNCallKeep
 {
